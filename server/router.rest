@@ -1,0 +1,59 @@
+GET http://localhost:8000/user
+
+###
+GET http://localhost:8000/user/test@gmail.com
+###
+
+POST http://localhost:8000/user
+Content-Type: application/json
+
+{
+    "name":"Bittu Basak",
+    "email":"basakbittu35@gmail.com",
+    "image":"https://example.com/test-image2.jpg"
+}
+
+
+###
+GET http://localhost:8000/post
+
+
+###
+
+POST http://localhost:8000/post
+Content-Type: application/json
+
+{
+    "postText":"Anirban",
+    "createdAt":"326347347",
+    "createdBy":"669f6f4dcf69eba9f78daa17",
+    "imageUrl":"Test image"
+}
+
+###
+PUT http://localhost:8000/post/like/659762151be7a262e3679dd6
+Content-Type: application/json
+
+{
+    "userId":"669eb76acf69eba9f744cd3d",
+    "isLike":true
+}
+
+
+
+
+###
+POST http://localhost:8000/comment
+Content-Type:  application/json
+
+{
+    "post":"659762151be7a262e3679dd6",
+    "createdBy":"6597615439f59629cddfd398",
+    "commentText":"Sample nEw Comment",
+    "createdAt":"1234"
+
+}
+
+###
+
+DELETE  http://localhost:8000/comment/6598bf62a127740fd8682732

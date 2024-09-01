@@ -46,7 +46,7 @@ router.post('/',async(req,res)=>{
     }
 })
 
-//Like/Dislike Post
+//Like Post
 router.put("/like/:postId",async(req,res)=>{
     try{
        const postId=req.params.postId;

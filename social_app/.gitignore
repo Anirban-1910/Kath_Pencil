@@ -21,7 +21,7 @@
 /out/
 
 # production
-/build
+#   /build     add comment
 
 # misc
 .DS_Store
